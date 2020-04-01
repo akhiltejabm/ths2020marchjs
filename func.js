@@ -1,15 +1,16 @@
-function students(name,age,city){
-    console.log(name);
-    console.log(age);
-    console.log(city);
-}
-//Invoking - Calling a function with inputs
-students('Prash',88,"Hyd");
-students("Dax Code", 15, "China");
+//ES6 EcmaScript 6 , JS after 2015
+//Fat Arrow Functions
 
-// console.log("Prashanth");
-// console.log(55);
-// console.log("Hyd");
+//IIFE = Immediate Invoked Function Expression
 
+(function() {
+	console.log('Hello World');
+})();
 
+(function(a, b) {
+	console.log(a + b);
+})(4, 5);
 
+((a, b) => {
+	console.log(a + b);
+})(9, 9);
