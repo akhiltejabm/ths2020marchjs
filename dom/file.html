@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+    navigator.getBattery().then((battery) => {
+        var val = battery.level * 100;
+        document.getElementById('bt-level').innerHTML = `${val} %`;
+        document.getElementById('bt-meter').value = battery.level;
+
+    });
+</script>
+
+<body>
+
+
+    <h1> Welcome to my Battery Status App</h1><br />
+    <h1>
+        Your Current Battery Level :
+        <p id="bt-level"></p>
+        <meter id="bt-meter"> </meter>
+    </h1>
+
+
+</body>
+
+
+</html>
